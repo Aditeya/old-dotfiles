@@ -1,0 +1,4 @@
+auto-reload yes
+browser $BROWSER
+
+include "~/.config/newsboat/colors/nord"
