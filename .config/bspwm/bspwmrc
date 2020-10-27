@@ -3,7 +3,7 @@
 killall -q -s 9 redshift;redshift -x;redshift &
 killall pasystray;pasystray &
 killall sxhkd;sxhkd &
-killall tundra;tundra daemon &
+#killall tundra;tundra daemon &
 ~/.config/polybar/launch.sh
 nitrogen --restore &
 picom &

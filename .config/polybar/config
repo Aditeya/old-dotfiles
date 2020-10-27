@@ -44,7 +44,7 @@ success    = ${self.nord14}
 function   = ${self.nord15}
 
 [bar/mybar]
-monitor = ${env:MONITOR:HDMI-A-0}
+monitor = ${env:MONITOR:eDP1}
 ;width = 1904
 height = 27
 ;offset-x = 8
@@ -76,7 +76,7 @@ font-1 = BitstreamVeraSansMono Nerd Font:style=Roman:fontformat=truetype:pixelsi
 
 modules-left = powermenu bspwm
 modules-center = mpd
-modules-right = eth filesystem cpu temperature memory xkeyboard pulseaudio date
+modules-right = eth filesystem battery cpu temperature memory xkeyboard pulseaudio date
 
 tray-position = right
 tray-maxsize = 16
@@ -95,7 +95,8 @@ cursor-scroll = ns-resize
 include-file = /home/aditeya/.config/polybar/modules/xkeyboard.ini
 include-file = /home/aditeya/.config/polybar/modules/filesystem.ini
 include-file = /home/aditeya/.config/polybar/modules/bspwm.ini
-include-file = /home/aditeya/.config/polybar/modules/mpd.ini
+;include-file = /home/aditeya/.config/polybar/modules/mpd.ini
+include-file = /home/aditeya/.config/polybar/modules/battery.ini
 include-file = /home/aditeya/.config/polybar/modules/cpu.ini
 include-file = /home/aditeya/.config/polybar/modules/memory.ini
 include-file = /home/aditeya/.config/polybar/modules/eth.ini

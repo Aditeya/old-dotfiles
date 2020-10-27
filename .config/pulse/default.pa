@@ -1,5 +1,1 @@
 .include /etc/pulse/default.pa
-
-set-sink-volume 0 65536
-set-sink-volume 1 65536
-set-sink-volume 2 65536
