@@ -76,7 +76,7 @@ font-1 = BitstreamVeraSansMono Nerd Font:style=Roman:fontformat=truetype:pixelsi
 
 modules-left = powermenu bspwm
 modules-center = mpd
-modules-right = eth filesystem battery cpu temperature memory xkeyboard pulseaudio date
+modules-right = wireless-network wired-network filesystem battery cpu temperature memory xkeyboard pulseaudio date
 
 tray-position = right
 tray-maxsize = 16
@@ -99,7 +99,8 @@ include-file = /home/aditeya/.config/polybar/modules/bspwm.ini
 include-file = /home/aditeya/.config/polybar/modules/battery.ini
 include-file = /home/aditeya/.config/polybar/modules/cpu.ini
 include-file = /home/aditeya/.config/polybar/modules/memory.ini
-include-file = /home/aditeya/.config/polybar/modules/eth.ini
+include-file = /home/aditeya/.config/polybar/modules/wired-network.ini
+include-file = /home/aditeya/.config/polybar/modules/wireless-network.ini
 include-file = /home/aditeya/.config/polybar/modules/date.ini
 include-file = /home/aditeya/.config/polybar/modules/pulseaudio.ini
 include-file = /home/aditeya/.config/polybar/modules/temperature.ini
