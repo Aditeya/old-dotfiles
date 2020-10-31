@@ -1,6 +1,5 @@
 #! /bin/sh
 
-killall -q -s 9 redshift;redshift -x;redshift &
 killall pasystray;pasystray &
 killall sxhkd;sxhkd &
 killall tundra;tundra daemon &
