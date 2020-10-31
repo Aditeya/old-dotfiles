@@ -154,7 +154,7 @@ export PYTHONSTARTUP=$HOME/.config/python/pythonstartup
 EDITOR=nvim
 VISUAL=nvim
 alias vim='nvim'
-alias sudo='sudo '
+alias s='sudo '
 alias p='pacman'
 alias pp='powerpill'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
