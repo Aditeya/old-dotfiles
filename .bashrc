@@ -155,6 +155,7 @@ EDITOR=nvim
 VISUAL=nvim
 alias vim='nvim'
 alias s='sudo '
+alias sudo='sudo '
 alias p='pacman'
 alias pp='powerpill'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
