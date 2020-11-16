@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for aditeya on Mon Aug 17 00:34:13 2020.
+# Written by xscreensaver-demo 5.44 for aditeya on Wed Oct 28 21:03:11 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -29,16 +29,16 @@ dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
-imageDirectory:	
+chooseRandomImages: True
+imageDirectory:	/home/aditeya/Pictures/wallpapers
 
 mode:		one
-selected:	0
+selected:	39
 
 textMode:	literal
-textLiteral:	XScreenSaver
+textLiteral:	Mau
 textFile:	
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
@@ -83,7 +83,7 @@ programs:								      \
 				mountain -root				    \n\
 				munch -root				    \n\
 				penrose -root				    \n\
-  GL: 				pipes -root				    \n\
+  GL: 				pipes -root -cycles 100 -tightturns	    \n\
 				rd-bomb -root				    \n\
   GL: 				rubik -root				    \n\
 -				sierpinski -root			    \n\
