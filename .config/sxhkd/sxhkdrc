@@ -16,8 +16,11 @@ super + {_, shift} + b
 super + shift + a
 	xmenu.sh
 
+super + shift + l
+	xscreensaver-command -activate
+
 # Function Media Keys
-XF86Mail
+	XF86Mail
 	thunderbird
 XF86Search
 	rofi -show run
