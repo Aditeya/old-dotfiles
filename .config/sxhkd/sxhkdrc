@@ -24,9 +24,9 @@ XF86Search
 XF86Calculator
 	speedcrunch
 # Screenshot
-super + shift + Home
+Print
 	flameshot full -p ~/Pictures/Screenshots
-super + Home
+shift + Print
 	flameshot gui -p ~/Pictures/Screenshots
 
 #program launcher
