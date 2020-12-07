@@ -37,6 +37,20 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Volume and Music Controls
+XF86AudioRaiseVolume
+	sh -c "pactl set-sink-mute 2 false ; pactl set-sink-volume 2 +5%"
+XF86AudioLowerVolume
+	sh -c "pactl set-sink-mute 2 false ; pactl set-sink-volume 2 -5%"
+XF86AudioMute
+	pactl set-sink-mute 2 toggle
+XF86AudioPlay
+	mpc toggle
+XF86AudioNext
+	mpc next
+XF86AudioPrev
+	mpc prev
+
 #
 # bspwm hotkeys
 #
