@@ -19,13 +19,27 @@ super + shift + a
 super + shift + l
 	xscreensaver-command -activate
 
-# Function Media Keys
-	XF86Mail
+#  XF86 Function Keys
+# Volume
+XF86AudioRaiseVolume
+	pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -5%
+XF86AudioMute
+	pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle
+# Brightness
+XF86MonBrightnessDown
+	xbacklight -dec 15
+XF86MonBrightnessUp
+	xbacklight -inc 15
+#Applications
+XF86Mail
 	thunderbird
 XF86Search
 	rofi -show run
 XF86Calculator
 	speedcrunch
+
 # Screenshot
 super + shift + Home
 	flameshot full -p ~/Pictures/Screenshots
