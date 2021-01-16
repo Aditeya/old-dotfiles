@@ -15,7 +15,7 @@ super + {_, shift} + b
 
 super + shift + a
 	xmenu.sh
-super + shift + l
+super + ctrl + shift + l
 	xscreensaver-command -lock
 
 # Function Media Keys
@@ -41,11 +41,11 @@ super + Escape
 
 # Volume and Music Controls
 XF86AudioRaiseVolume
-	sh -c "pactl set-sink-mute 2 false ; pactl set-sink-volume 2 +5%"
+	sh -c "pactl set-sink-mute combined false ; pactl set-sink-volume combined +5%"
 XF86AudioLowerVolume
-	sh -c "pactl set-sink-mute 2 false ; pactl set-sink-volume 2 -5%"
+	sh -c "pactl set-sink-mute combined false ; pactl set-sink-volume combined -5%"
 XF86AudioMute
-	pactl set-sink-mute 2 toggle
+	pactl set-sink-mute combined toggle
 XF86AudioPlay
 	mpc toggle
 XF86AudioNext
