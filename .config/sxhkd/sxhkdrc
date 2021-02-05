@@ -41,11 +41,11 @@ super + Escape
 
 # Volume and Music Controls
 XF86AudioRaiseVolume
-	sh -c "pactl set-sink-mute combined false ; pactl set-sink-volume combined +5%"
+	pulseaudio-ctl up
 XF86AudioLowerVolume
-	sh -c "pactl set-sink-mute combined false ; pactl set-sink-volume combined -5%"
+	pulseaudio-ctl down
 XF86AudioMute
-	pactl set-sink-mute combined toggle
+	pulseaudio-ctl mute
 XF86AudioPlay
 	mpc toggle
 XF86AudioNext
@@ -112,6 +112,8 @@ super + bracket{left,right}
 # focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
+super + alt + grave
+	rofi -show window
 
 # focus the older or newer node in the focus history
 super + {o,i}
