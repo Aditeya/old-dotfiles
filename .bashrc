@@ -76,7 +76,7 @@ if ${use_color} ; then
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
 
-	alias ls='ls -h --color=auto'
+	alias ls='exa --icons --header --git'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
@@ -156,6 +156,8 @@ VISUAL=nvim
 alias vim='nvim'
 alias s='sudo '
 alias sudo='sudo '
+alias d='doas '
+alias doas='doas '
 alias p='pacman'
 alias pp='powerpill'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
