@@ -19,6 +19,7 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 
 call plug#end()
 
+"Deoplete
 let g:deoplete#enable_at_startup = 1
 
 "clipboard
