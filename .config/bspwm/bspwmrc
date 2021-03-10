@@ -3,6 +3,7 @@
 killall pasystray;pasystray &
 killall sxhkd;sxhkd &
 killall tundra;tundra daemon &
+solaar --window=hide
 ~/.config/polybar/launch.sh
 nitrogen --restore &
 picom &
