@@ -149,6 +149,8 @@ man() {
     command man "$@"
 }
 
+set -o vi
+
 export PYTHONSTARTUP=$HOME/.config/python/pythonstartup
 
 EDITOR=nvim
