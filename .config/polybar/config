@@ -76,7 +76,7 @@ font-1 = BitstreamVeraSansMono Nerd Font:style=Roman:fontformat=truetype:pixelsi
 
 modules-left = powermenu bspwm
 modules-center = mpd
-modules-right = eth filesystem cpu temperature memory xkeyboard pulseaudio date
+modules-right = daycount eth filesystem cpu temperature memory xkeyboard pulseaudio date
 
 tray-position = right
 tray-maxsize = 16
@@ -92,6 +92,7 @@ scroll-down = bspwm-deskprev
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+include-file = /home/aditeya/.config/polybar/modules/daycount.ini
 include-file = /home/aditeya/.config/polybar/modules/xkeyboard.ini
 include-file = /home/aditeya/.config/polybar/modules/filesystem.ini
 include-file = /home/aditeya/.config/polybar/modules/bspwm.ini

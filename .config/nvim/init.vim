@@ -16,7 +16,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Misc
 Plug 'itchyny/lightline.vim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-
+Plug 'lervag/vimtex'
 call plug#end()
 
 "Deoplete
