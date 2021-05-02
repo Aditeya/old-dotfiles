@@ -50,6 +50,24 @@ let g:lightline = {
 "vim-hexokinase
 let g:Hexokinase_highlighters = [ 'backgroundfull' ]
 
+"vimtex
+let g:latex_view_general_viewer = "zathura"
+let g:vimtex_view_method = 'zathura'
+let g:Tex_MultipleCompileFormats='pdf,bib,pdf'
+let g:vimtex_compiler_method = 'latexmk'
+let g:vimtex_compiler_latexmk = {
+        \ 'executable' : 'latexmk',
+        \ 'options' : [
+        \   '-pdf',
+		\	'-bibtex-cond',
+        \   '-file-line-error',
+        \   '-synctex=1',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
+let g:vimtex_grammar_vlty = {'lt_command': 'languagetool'}
+set spelllang=en_gb
+
 "autocomplete for files
 set wildmode=longest,list,full
 
