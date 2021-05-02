@@ -5,6 +5,8 @@
 # Executed by startx (run your window manager from here)
 
 lightson+ -d 2 &
+xset -dpms
+xset s noblank
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap

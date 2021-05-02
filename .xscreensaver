@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for aditeya on Mon Aug 17 00:34:13 2020.
+# Written by xscreensaver-settings 6.00 for aditeya on Sun May  2 21:45:48 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -10,29 +10,24 @@ passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
 verbose:	False
-timestamp:	True
 splash:		False
 splashDuration:	0:00:05
-demoCommand:	xscreensaver-demo
-prefsCommand:	
+demoCommand:	xscreensaver-settings
 nice:		10
-memoryLimit:	0
 fade:		True
 unfade:		False
 fadeSeconds:	0:00:03
-fadeTicks:	20
-captureStderr:	True
 ignoreUninstalledPrograms:False
-font:		*-medium-r-*-140-*-m-*
+font:		
 dpmsEnabled:	False
 dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
-imageDirectory:	
+chooseRandomImages: True
+imageDirectory:	/home/aditeya/Pictures/wallpapers
 
 mode:		one
 selected:	0
@@ -42,9 +37,10 @@ textLiteral:	XScreenSaver
 textFile:	
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
+dialogTheme:	greenblack
 
 programs:								      \
-		   "ATV4-1080" 	atv4-1080				    \n\
+		     "ATV4-2k" 	atv4-2k					    \n\
 		     "ATV4-4k" 	atv4-4k					    \n\
 				maze -root				    \n\
   GL: 				superquadrics -root			    \n\
@@ -148,6 +144,7 @@ programs:								      \
   GL: 				menger -root				    \n\
   GL: 				molecule -root				    \n\
 				rotzoomer -root				    \n\
+				scooter -root				    \n\
 				speedmine -root				    \n\
   GL: 				starwars -root				    \n\
   GL: 				stonerview -root			    \n\
@@ -200,7 +197,7 @@ programs:								      \
 				popsquares -root			    \n\
   GL: 				surfaces -root				    \n\
 				xanalogtv -root				    \n\
-				abstractile -root -speed 5		    \n\
+				abstractile -root			    \n\
 				anemotaxis -root			    \n\
 - GL: 				antinspect -root			    \n\
 				fireworkx -root				    \n\
@@ -216,7 +213,7 @@ programs:								      \
 				substrate -root				    \n\
 				wormhole -root				    \n\
 - GL: 				antmaze -root				    \n\
-  GL: 				boing -root				    \n\
+  GL: 				boing -root -meridians 14		    \n\
 				boxfit -root				    \n\
   GL: 				carousel -root				    \n\
 				celtic -root				    \n\
@@ -281,18 +278,14 @@ programs:								      \
 				vfeedback -root				    \n\
   GL: 				deepstars -root				    \n\
   GL: 				gravitywell -root			    \n\
-				scooter -root				    \n\
+  GL: 				beats -root				    \n\
+  GL: 				covid19 -root				    \n\
   GL: 				etruscanvenus -root			    \n\
   GL: 				gibson -root				    \n\
+  GL: 				headroom -root				    \n\
+  GL: 				sphereeversion -root			    \n\
 
 
-pointerPollTime:    0:00:05
 pointerHysteresis:  10
-windowCreationTimeout:0:00:30
-initialDelay:	0:00:00
-GetViewPortIsFullOfLies:False
-procInterrupts:	True
-xinputExtensionDev: False
-overlayStderr:	True
 authWarningSlack:   20
 
