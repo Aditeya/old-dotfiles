@@ -1,5 +1,7 @@
 # Desktop Dotfiles
 
+The main colourscheme of the system is the [Nord Theme](https://www.nordtheme.com/).
+
 ## ncmpcpp
 ![screenshot 1](/Pictures/dfimgs/ncmpcpp.png)
 
