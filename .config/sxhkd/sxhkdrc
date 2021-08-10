@@ -16,7 +16,7 @@ super + {_, shift} + b
 super + shift + a
 	xmenu.sh
 
-super + shift + l
+super + shift + ctrl + l
 	xscreensaver-command -activate
 
 #  XF86 Function Keys
