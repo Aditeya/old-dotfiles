@@ -215,3 +215,5 @@ alias sudo='sudo '
 alias p='pacman'
 alias pp='powerpill'
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+set -o vi
