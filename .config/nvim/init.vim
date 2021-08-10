@@ -1,3 +1,4 @@
+if !exists('g:vscode')
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -21,6 +22,19 @@ call plug#end()
 
 let g:deoplete#enable_at_startup = 1
 
+"status line / lightline.vim
+set laststatus=2
+set t_Co=256
+set noshowmode
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
+
+"vim-hexokinase
+let g:Hexokinase_highlighters = [ 'backgroundfull' ]
+
+endif
+
 "clipboard
 set clipboard+=unnamedplus
 
@@ -38,16 +52,6 @@ syntax on
 set termguicolors
 colorscheme nord
 
-"status line / lightline.vim
-set laststatus=2
-set t_Co=256
-set noshowmode
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ }
-
-"vim-hexokinase
-let g:Hexokinase_highlighters = [ 'backgroundfull' ]
 
 "autocomplete for files
 set wildmode=longest,list,full
