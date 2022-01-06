@@ -6,6 +6,11 @@
 super + Return
 	st
 
+#super + F1
+#	cut-paster.sh ~/quotes.txt
+super + F1
+	xdotool click --delay 100 --repeat 100 1
+
 # file manager
 super + shift + Return
 	st -e ranger
@@ -38,24 +43,31 @@ super + @space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+super + alt + Escape
+	pkill -USR1 -x polybar
 
 # Volume and Music Controls
 XF86AudioRaiseVolume
-	pulseaudio-ctl up
+	pamixer --increase 5
 XF86AudioLowerVolume
-	pulseaudio-ctl down
+	pamixer --decrease 5
 XF86AudioMute
-	pulseaudio-ctl mute
+	pamixer --toggle-mute
 XF86AudioPlay
 	mpc toggle
 XF86AudioNext
 	mpc next
 XF86AudioPrev
 	mpc prev
+super + XF86AudioPlay
+	rofi-beats
 
 #
 # bspwm hotkeys
 #
+
+super + ctrl + {Prior,Next}
+	bspc desktop {prev,next}.occupied -f
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -128,6 +140,8 @@ super + {_,shift + }{1-9,0}
 #
 # preselect
 #
+super + ctrl + n
+	bspc node -n 'last.!automatic.local'
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
