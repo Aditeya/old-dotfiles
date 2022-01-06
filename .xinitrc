@@ -67,4 +67,6 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+
+exec "/usr/bin/polkit-dumb-agent"
 exec $(get_session)
