@@ -3,19 +3,21 @@
 killall pasystray;pasystray &
 killall sxhkd;sxhkd &
 killall tundra;tundra daemon &
+killall flameshot;flameshot &
 solaar --window=hide &
 ~/.config/polybar/launch.sh
 nitrogen --restore &
 picom &
 xscreensaver -no-splash &
 remaps
+xset s off -dpms
 
 # Make Java behave
 wmname LG3D
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         2
+bspc config border_width         1
 bspc config window_gap           8
 bspc config top_padding          8
 
@@ -28,3 +30,5 @@ bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=tiled follow=on
 bspc rule -a Zathura state=tiled
+
+$HOME/.config/bspwm/autostart.sh &
