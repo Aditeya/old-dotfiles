@@ -52,33 +52,33 @@ Sxiv.foreground: nord15
 xscreensaver.splash: false
 
 !font settings
-xscreensaver.Dialog.headingFont:        -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
-xscreensaver.Dialog.bodyFont:           -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
-xscreensaver.Dialog.labelFont:          -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
-xscreensaver.Dialog.unameFont:          -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
-xscreensaver.Dialog.buttonFont:         -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
-xscreensaver.Dialog.dateFont:           -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
-xscreensaver.passwd.passwdFont:         -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.headingFont:        -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.bodyFont:           -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.labelFont:          -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.unameFont:          -*-terminus-medium-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.buttonFont:         -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
+xscreensaver.Nord.Dialog.dateFont:           -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
+xscreensaver.Nord.passwd.passwdFont:         -*-terminus-bold-r-*-*-32-*-*-*-*-*-*-*
 
 !general dialog box (affects main hostname, username, password text)
-xscreensaver.Dialog.foreground:         nord4
-xscreensaver.Dialog.background:         nord0
-xscreensaver.Dialog.topShadowColor:     nord0
-xscreensaver.Dialog.bottomShadowColor:  nord0
-xscreensaver.Dialog.Button.foreground:  nord4
-xscreensaver.Dialog.Button.background:  nord0
+xscreensaver.Nord.Dialog.foreground:         nord4
+xscreensaver.Nord.Dialog.background:         nord0
+xscreensaver.Nord.Dialog.topShadowColor:     nord0
+xscreensaver.Nord.Dialog.bottomShadowColor:  nord0
+xscreensaver.Nord.Dialog.Button.foreground:  nord4
+xscreensaver.Nord.Dialog.Button.background:  nord0
 
 !username/password input box and date text colour
-xscreensaver.Dialog.text.foreground:    nord4
-xscreensaver.Dialog.text.background:    nord0
-xscreensaver.Dialog.internalBorderWidth:36
-xscreensaver.Dialog.borderWidth:        0
-xscreensaver.Dialog.shadowThickness:    2
+xscreensaver.Nord.Dialog.text.foreground:    nord4
+xscreensaver.Nord.Dialog.text.background:    nord0
+xscreensaver.Nord.Dialog.internalBorderWidth:36
+xscreensaver.Nord.Dialog.borderWidth:        0
+xscreensaver.Nord.Dialog.shadowThickness:    2
 
 !timeout bar (background is actually determined by Dialog.text.background)
-xscreensaver.passwd.thermometer.foreground:  nord11
-xscreensaver.passwd.thermometer.background:  nord0
-xscreensaver.passwd.thermometer.width:       8
+xscreensaver.Nord.passwd.thermometer.foreground:  nord11
+xscreensaver.Nord.passwd.thermometer.background:  nord0
+xscreensaver.Nord.passwd.thermometer.width:       8
 
 !datestamp format--see the strftime(3) manual page for details
-xscreensaver.dateFormat:    %I:%M%p - %a %b %d, %Y
+xscreensaver.Nord.dateFormat:    %I:%M%p - %a %b %d, %Y
