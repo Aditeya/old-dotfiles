@@ -12,11 +12,12 @@ Plug 'arcticicestudio/nord-vim'
 "File Manager
 Plug 'scrooloose/nerdtree'
 "AutoComplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "Misc
 Plug 'itchyny/lightline.vim'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'lervag/vimtex'
+"Languages
+Plug 'kovetskiy/sxhkd-vim'
 call plug#end()
 
 "Deoplete
