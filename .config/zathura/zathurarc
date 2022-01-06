@@ -3,6 +3,11 @@ set selection-clipboard clipboard
 # Changes windows title to just filename
 set window-title-basename "true"
 
+set sandbox none
+
+set scroll-step 15
+set scroll-hstep 15
+
 # Base16 Nord
 # Author: arcticicestudio
 
