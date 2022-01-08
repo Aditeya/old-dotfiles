@@ -77,7 +77,11 @@ font-1 = BitstreamVeraSansMono Nerd Font:style=Roman:fontformat=truetype:pixelsi
 
 modules-left = powermenu bspwm
 modules-center = mpd
+<<<<<<< HEAD
 modules-right = eth filesystem cpu temperature memory xkeyboard pipewire date
+=======
+modules-right = eth filesystem cpu temperature memory xkeyboard pulseaudio-control date
+>>>>>>> 330efd9 (improved pipewire module in polybar)
 
 tray-position = right
 tray-maxsize = 16
@@ -102,7 +106,7 @@ include-file = /home/aditeya/.config/polybar/modules/cpu.ini
 include-file = /home/aditeya/.config/polybar/modules/memory.ini
 include-file = /home/aditeya/.config/polybar/modules/eth.ini
 include-file = /home/aditeya/.config/polybar/modules/date.ini
-include-file = /home/aditeya/.config/polybar/modules/pipewire.ini
+include-file = /home/aditeya/.config/polybar/modules/pulseaudio-control.ini
 include-file = /home/aditeya/.config/polybar/modules/temperature.ini
 include-file = /home/aditeya/.config/polybar/modules/powermenu.ini
 
