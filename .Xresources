@@ -46,8 +46,11 @@
 *.color14: nord7
 *.color15: nord6
 
-Sxiv.background: nord0
-Sxiv.foreground: nord15
+Nsxiv.window.background: nord0
+Nsxiv.window.foreground: nord15
+Nsxiv.bar.background: nord15
+Nsxiv.bar.foreground: nord0
+Nsxiv.mark.foreground: nord11
 
 xscreensaver.splash: false
 
