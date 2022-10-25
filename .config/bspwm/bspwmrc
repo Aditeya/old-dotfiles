@@ -6,11 +6,6 @@ killall tundra;tundra daemon &
 killall flameshot;flameshot &
 solaar --window=hide &
 ~/.config/polybar/launch.sh
-nitrogen --restore &
-picom &
-xscreensaver -no-splash &
-remaps
-xset s off -dpms
 
 # Make Java behave
 wmname LG3D
@@ -28,7 +23,8 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=tiled follow=on
+bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Zathura state=tiled
+bspc rule -a '*:*:Picture-in-picture' state=floating
 
 $HOME/.config/bspwm/autostart.sh &

@@ -1,26 +1,22 @@
-#
-# wm independent hotkeys
-#
-
 # terminal emulator
 super + Return
-	st
-
-#super + F1
-#	cut-paster.sh ~/quotes.txt
-super + F1
-	xdotool click --delay 100 --repeat 100 1
+	$TERMINAL
+super + ctrl + Return
+	toggle-alacritty-opacity.sh
 
 # file manager
 super + shift + Return
-	st -e ranger
+	$TERMINAL -e lfrun
 
 super + {_, shift} + b
-	{$BROWSER, st -e newsboat}
+	{$BROWSER, $TERMINAL -e newsboat}
+
+super + w
+	dmenu-workflow
 
 super + shift + a
 	xmenu.sh
-super + ctrl + shift + l
+super + ctrl + shift + z
 	xscreensaver-command -lock
 
 # Function Media Keys
@@ -32,13 +28,17 @@ XF86Calculator
 	speedcrunch
 # Screenshot
 Print
-	flameshot full -p ~/Pictures/Screenshots
+	flameshot full --clipboard
 shift + Print
-	flameshot gui -p ~/Pictures/Screenshots
+	flameshot gui
 
 #program launcher
 super + @space
 	dmenu_run
+super + alt + v
+	clipmenu
+#super + v ; {n,r}
+#	$TERMINAL -e {newsboat,tuir}
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -60,7 +60,7 @@ XF86AudioNext
 XF86AudioPrev
 	mpc prev
 super + XF86AudioPlay
-	rofi-beats
+	dmenu-radio
 
 #
 # bspwm hotkeys
@@ -145,7 +145,7 @@ super + ctrl + n
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+	bspc node -p '~{west,south,north,east}'
 
 # preselect the ratio
 super + ctrl + {1-9}
