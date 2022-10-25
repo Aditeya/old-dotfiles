@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for aditeya on Wed Jun  9 12:32:16 2021.
+# Written by xscreensaver-settings 6.04 for aditeya on Mon Jul 11 13:57:04 2022.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -14,7 +14,7 @@ splash:		False
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-settings
 nice:		10
-fade:		True
+fade:		False
 unfade:		False
 fadeSeconds:	0:00:03
 ignoreUninstalledPrograms:False
@@ -284,6 +284,12 @@ programs:								      \
   GL: 				gibson -root				    \n\
   GL: 				headroom -root				    \n\
   GL: 				sphereeversion -root			    \n\
+				binaryhorizon -root			    \n\
+				marbling -root				    \n\
+  GL: 				chompytower -root			    \n\
+  GL: 				mapscroller -root			    \n\
+  GL: 				nakagin -root				    \n\
+  GL: 				squirtorus -root			    \n\
 
 
 pointerHysteresis:  10
