@@ -1,0 +1,5 @@
+{
+    "device": "alsa_input.usb-Generic_USB_Audio-00.analog-stereo",
+    "device-profile": "analog-input-mic",
+    "preset-name": "Bose SoundSport In Ear inline mic"
+}
