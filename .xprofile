@@ -5,7 +5,6 @@ export XMODIFIERS='@im=fcitx'
 
 polkit-dumb-agent &
 remaps
-setxkbmap -option "caps:swapescape"
 clipmenud & 
 fcitx -d &
 xsetroot -cursor_name Bibata-Original-Classic
