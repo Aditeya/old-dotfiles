@@ -1,6 +1,6 @@
 [Default Applications]
 application/octet-stream=mousepad.desktop
-application/pdf=qpdfview.desktop
+application/pdf=org.pwmt.zathura.desktop
 application/x-gettext-translation=mousepad.desktop
 application/xml=mousepad.desktop
 application/x-wine-extension-ini=mousepad.desktop
@@ -11,12 +11,12 @@ image/jxl=nsxiv.desktop
 image/webp=nsxiv.desktop
 image/svg=nsxiv.desktop
 text/plain=neovide.desktop
-video/mp4=vlc.desktop
-video/ogg=vlc.desktop
-video/x-flv=vlc.desktop
-video/x-ms-wmv=vlc.desktop
-video/x-ogm+ogg=vlc.desktop
-video/x-theora+ogg=vlc.desktop
+video/mp4=mpv.desktop
+video/ogg=mpv.desktop
+video/x-flv=mpv.desktop
+video/x-ms-wmv=mpv.desktop
+video/x-ogm+ogg=mpv.desktop
+video/x-theora+ogg=mpv.desktop
 x-scheme-handler/http=brave.desktop
 x-scheme-handler/https=brave.desktop
 x-scheme-handler/ftp=firefox.desktop
@@ -44,6 +44,8 @@ x-scheme-handler/mid=userapp-Thunderbird-XJJ9N1.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-AISUG1.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop
+inode/directory=thunar.desktop
+application/x-gnome-saved-search=thunar.desktop
 
 [Added Associations]
 application/x-java-archive=userapp-"java"-9T0KG0.desktop;
